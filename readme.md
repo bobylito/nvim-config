@@ -10,11 +10,23 @@ for ascii and non-ascii characters (otherwise you'll see weird looking glyphs).
 
 ## Usage
 
+### Clone the repo
+
 ```sh
 mkdir ~/.config/nvim
 cd ~/config/nvim
 git clone git@github.com:bobylito/nvim-config.git 
 ```
+
+### Install the plugins
+
+Open nvim and run:
+
+```vim
+:PlugInstall
+```
+
+This should install all the necessary plugins.
 
 ## Thanks
 
