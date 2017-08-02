@@ -35,6 +35,7 @@ set number              " Show the line numbers on the left side.
 set expandtab           " Insert spaces when TAB is pressed.
 set tabstop=2           " Render TABs using this many spaces.
 set shiftwidth=2        " Indentation amount for < and > commands.
+set cursorline          " Highlight the current line
 
 " Tell Vim which characters to show for expanded TABs,
 " trailing whitespace, and end-of-lines. VERY useful!
@@ -55,6 +56,9 @@ set gdefault            " Use 'g' flag by default with :s/foo/bar/.
 if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 endif
+
+" Disable Ex mode
+nnoremap Q <nop>
 
 " Share clipboard with system
 set clipboard=unnamedplus
