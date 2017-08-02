@@ -58,7 +58,7 @@ if maparg('<C-L>', 'n') ==# ''
 endif
 
 " Disable Ex mode
-nnoremap Q <nop>
+map Q <nop>
 
 " Share clipboard with system
 set clipboard=unnamedplus
