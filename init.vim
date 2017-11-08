@@ -13,6 +13,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'digitaltoad/vim-pug'
   Plug 'ap/vim-css-color'
   Plug 'tpope/vim-fugitive'
+  Plug 'editorconfig/editorconfig-vim'
+"  Plug 'posva/vim-vue'
 call plug#end()
 
 " Useful for using crazy characters in the UI
@@ -111,3 +113,6 @@ endif
 nnoremap K :Ack! -w "<C-R><C-W>"<CR>:cw<CR>
 
 let g:airline_inactive_collapse=0
+
+" Editorconfig config
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
