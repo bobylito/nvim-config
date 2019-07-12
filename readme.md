@@ -35,7 +35,7 @@ This configuration is based on the blog post from Nerditya:
 bootstrap the configuration.
 
 Also a special note for [thoughtbot's article](https://robots.thoughtbot.com/my-life-with-neovim)
-that gave the confidence to move away from Vim (that it is bad but just that
+that gave the confidence to move away from Vim (not that it is bad but just that
 NeoVim is viable alternative).
 
 This configuration couldn't have been done without the numerous people
