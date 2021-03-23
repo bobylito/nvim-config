@@ -142,5 +142,6 @@ let g:highlightedyank_highlight_duration = 300
 "" Autoformat python files with black, on save
 autocmd BufWritePre *.py execute ':Black'
 
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+" let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.mdx,*.vue,*.yaml,*.html,*.php,*.yml PrettierAsync
+autocmd BufWritePre *.frag,*.vert Neoformat
