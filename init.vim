@@ -17,13 +17,12 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'machakann/vim-highlightedyank'
   Plug 'airblade/vim-gitgutter'
   Plug 'python/black'
-  Plug 'ncm2/ncm2'
-  Plug 'roxma/nvim-yarp'
-  Plug 'ncm2/ncm2-ultisnips'
-  Plug 'SirVer/ultisnips'
-  Plug 'honza/vim-snippets'
-  " post install (yarn install | npm install)
-  Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+  Plug 'sophacles/vim-processing'
+  Plug 'tikhomirov/vim-glsl'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'sbdchd/neoformat'
+  Plug 'prettier/vim-prettier', { 'branch': 'issue/232-adding-support-for-prettier-2.x', 'do': 'npm install'}
+  Plug 'milch/vim-fastlane'
 call plug#end()
 
 "" Useful for using crazy characters in the UI
