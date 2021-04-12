@@ -3,6 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'othree/csscomplete.vim'
   Plug 'Shougo/neco-syntax'
   Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'whatyouhide/vim-gotham'
   Plug 'ryanoasis/vim-devicons' " install your font first https://github.com/ryanoasis/nerd-fonts
@@ -23,6 +24,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'sbdchd/neoformat'
   Plug 'prettier/vim-prettier', { 'branch': 'issue/232-adding-support-for-prettier-2.x', 'do': 'npm install'}
   Plug 'milch/vim-fastlane'
+  Plug 'bobylito/dank-neon_vim',
 call plug#end()
 
 "" Useful for using crazy characters in the UI
@@ -32,8 +34,13 @@ set encoding=utf8
 set mouse=a
 
 "" theme
-colors gotham
-let g:airline_theme='gotham'
+colors "dank-neon"
+let g:airline_theme='violet'
+set fillchars=stl:^,stlnc:\ ,vert:\|,fold:-,diff:-
+hi VertSplit ctermfg=Black ctermbg=DarkGray
+hi StatusLine ctermfg=Black ctermbg=DarkGray
+hi StatusLineNC ctermfg=Black ctermbg=DarkGray
+
 
 " jk fells more efficient for quitting the insert mode
 inoremap jk <Esc>
@@ -45,7 +52,7 @@ set number              " Show the line numbers on the left side.
 set expandtab           " Insert spaces when TAB is pressed.
 set tabstop=2           " Render TABs using this many spaces.
 set shiftwidth=2        " Indentation amount for < and > commands.
-set cursorline          " Highlight the current line
+" set cursorline          " Highlight the current line
 
 "" Tell Vim which characters to show for expanded TABs,
 "" trailing whitespace, and end-of-lines. VERY useful!
