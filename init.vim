@@ -24,7 +24,9 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'sbdchd/neoformat'
   Plug 'prettier/vim-prettier', { 'branch': 'issue/232-adding-support-for-prettier-2.x', 'do': 'npm install'}
   Plug 'milch/vim-fastlane'
-  Plug 'bobylito/dank-neon_vim',
+  Plug 'bobylito/dank-neon_vim'
+  Plug 'junegunn/goyo.vim'
+  Plug 'junegunn/limelight.vim'
 call plug#end()
 
 "" Useful for using crazy characters in the UI
@@ -188,3 +190,12 @@ inoremap <silent><expr> <C-p> coc#refresh()
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
 " Coc only does snippet and additional edit on confirm.
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" Limelight colors
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_guifg = 'DarkGray'
+
+" Goyo / limelight integration
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
