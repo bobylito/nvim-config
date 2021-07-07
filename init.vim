@@ -9,6 +9,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'ryanoasis/vim-devicons' " install your font first https://github.com/ryanoasis/nerd-fonts
   Plug 'pangloss/vim-javascript'
   Plug 'sheerun/vim-polyglot'
+  Plug 'HerringtonDarkholme/yats.vim'
   Plug 'mileszs/ack.vim'
   Plug 'vim-syntastic/syntastic'
   Plug 'digitaltoad/vim-pug'
