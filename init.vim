@@ -58,14 +58,14 @@ set shiftwidth=2        " Indentation amount for < and > commands.
 
 "" Tell Vim which characters to show for expanded TABs,
 "" trailing whitespace, and end-of-lines. VERY useful!
-if &listchars ==# 'eol:$'
-  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
-endif
-set list                " Show problematic characters.
+" if &listchars ==# 'eol:$'
+"   set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+" endif
+" set list                " Show problematic characters.
 
 "" Also highlight all tabs and trailing whitespace characters.
-highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
-match ExtraWhitespace /\s\+$\|\t/
+" highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+" match ExtraWhitespace /\s\+$\|\t/
 
 set ignorecase          " Make searching case insensitive
 set smartcase           " ... unless the query has capital letters.
