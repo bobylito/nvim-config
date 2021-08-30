@@ -24,7 +24,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tikhomirov/vim-glsl'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'sbdchd/neoformat'
-  Plug 'prettier/vim-prettier', { 'branch': 'issue/232-adding-support-for-prettier-2.x', 'do': 'npm install'}
+  Plug 'prettier/vim-prettier', { 'do': 'npm install'}
   Plug 'milch/vim-fastlane'
   Plug 'bobylito/dank-neon_vim'
   Plug 'junegunn/goyo.vim'
