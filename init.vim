@@ -153,13 +153,10 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 "" Highlighted yank config
 let g:highlightedyank_highlight_duration = 300
 
-"" Autoformat python files with black, on save
-autocmd BufWritePre *.py execute ':Black'
+"" Configuration for auto formatting
+source ~/.config/nvim/plugins-config/autoformat.vim
 
-" let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.mdx,*.vue,*.yaml,*.html,*.php,*.yml PrettierAsync
-autocmd BufWritePre *.frag,*.vert Neoformat
-
+"" Configuration for CoC
 source ~/.config/nvim/plugins-config/coc.vim
 
 " Limelight colors
