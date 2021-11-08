@@ -44,7 +44,8 @@ set fillchars=stl:^,stlnc:\ ,vert:\|,fold:-,diff:-
 hi VertSplit ctermfg=Black ctermbg=DarkGray
 hi StatusLine ctermfg=Black ctermbg=DarkGray
 hi StatusLineNC ctermfg=Black ctermbg=DarkGray
-
+hi IncSearch ctermfg=Black ctermbg=111 cterm=NONE guifg=#191b2a guibg=#94bfff gui=NONE
+hi Search ctermfg=NONE ctermbg=DarkGray cterm=underline guifg=NONE guibg=NONE gui=underline
 
 " jk fells more efficient for quitting the insert mode
 inoremap jk <Esc>
@@ -56,6 +57,8 @@ set number              " Show the line numbers on the left side.
 set expandtab           " Insert spaces when TAB is pressed.
 set tabstop=2           " Render TABs using this many spaces.
 set shiftwidth=2        " Indentation amount for < and > commands.
+set tw=0                " Disable wrap line
+set wrap linebreak      " Soft wrap
 " set cursorline          " Highlight the current line
 
 "" Tell Vim which characters to show for expanded TABs,
@@ -93,10 +96,11 @@ autocmd FileType nerdtree setlocal nolist " Prevent glitch 'small plus' display 
 
 "" Ignore git files in CTRL-P
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+"" Don't forget to set "git config --global core.quotePath false" to handle accents
 
 "" javascript specific config
 let g:javascript_plugin_jsdoc = 1
-let g:javascript_plugin_flow = 1
+" let g:javascript_plugin_flow = 1 " Not using flow...
 
 "" Cleanup js by pressing F4
 inoremap <silent> <F10> <Esc>:call JavascriptBeautify()<CR><CR>
