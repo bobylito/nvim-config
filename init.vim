@@ -141,6 +141,10 @@ if executable('ag') " Swith to ag if available
 endif
 nnoremap K :Ack! -w "<C-R><C-W>"<CR>:cw<CR>
 
+"" Config for Ack
+let g:ackhighlight=1    " Highlight the current search
+let g:ackpreview=1      " Open current selection in buffer automatically
+
 let g:airline_inactive_collapse=0
 
 "" Editorconfig config
