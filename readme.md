@@ -20,6 +20,8 @@ git clone git@github.com:bobylito/nvim-config.git
 
 ### Install the plugins
 
+Install [Plug](https://github.com/junegunn/vim-plug#installation)
+
 Open nvim and run:
 
 ```vim
